@@ -77,7 +77,7 @@ namespace POC.AutomatedTesting.Controllers
 
         [HttpPut]
         [Route("[action]")]
-        public ActionResult<TeamMember> UpdateProduct(TeamMember p)
+        public ActionResult<TeamMember> UpdateTeamMember(TeamMember p)
         {
             TeamMember pro = _teamMembers.Find(pr => pr.Id == p.Id);
             if (pro == null)
